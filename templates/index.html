@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>github.com/m-kypr A* Pathfinding Implementation</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <style>
+      body {
+        background: #101010;
+        margin: 0;
+        padding: 0;
+      }
 
-  <style>
-    body {
-      /* padding: 10px; */
-      background: #101010;
-      margin: 0;
-      padding: 0;
-      /* overflow: hidden; */
-    }
+      canvas {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
 
-    canvas {
-      padding: 0;
-      margin: 0;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
+      #button {
+        padding: 5px;
+        background-color: white;
+        width: 120px;
+        height: 50px;
+        font-size: 12px;
+        position: relative;
+        display: flex;
+        border-radius: 2px;
+        justify-content: center;
+        align-items: center;
 
-    #button {
-      padding: 5px;
-      background-color: white;
-      width: 120px;
-      height: 50px;
-      font-size: 12px;
-      position: relative;
-      display: flex;
-      border-radius: 2px;
-      justify-content: center;
-      align-items: center;
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+      }
+    </style>
+  </head>
 
-      user-select: none;
-      -moz-user-select: none;
-      -khtml-user-select: none;
-      -webkit-user-select: none;
-      -o-user-select: none;
-    }
-  </style>
-</head>
-
-<body>
-  <canvas width="100" height="100" id="canvas"></canvas>
-  <div id="button">Start Pathfinding!</div>
-  <!-- {% autoescape false %} {{ grid }} {% endautoescape %} -->
-</body>
-<script src="static/draw.js"></script>
-
+  <body>
+    <canvas width="100" height="100" id="canvas"></canvas>
+    <div id="button">Start Pathfinding!</div>
+  </body>
+  <script src="static/draw.js"></script>
 </html>
