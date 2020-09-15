@@ -46,7 +46,7 @@ class Node():
       for j in range(self.x-1, self.x+2):
         if i < 0 or i > dim[1] or j < 0 or j > dim[0] or (i == self.y and j == self.x):
           continue
-        if mm[j][i]==1:
+        if mm[j-1][i-1]==1:
           continue
         n = Node(j, i, parent=self)
         if n in explored:
